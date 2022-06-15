@@ -21,6 +21,7 @@ void create()
 void display()
 {
     int i;
+
     printf("The Array Element are: ");
     for (i = 0; i < n; i++)
     {
@@ -33,6 +34,12 @@ void insert()
     int p, v;
     printf("\nEnter Position and its Value: ");
     scanf("%d%d", &p, &v);
+
+    if (p < 0)
+    {
+        printf("Invalid Input");
+    }
+
     a[p] = v;
 }
 
@@ -43,9 +50,17 @@ void delete ()
     printf("\nEnter the position of Element : ");
     scanf("%d", &p);
 
-    for (i = p - 1; i < n - 1; i++)
+    if (p >= n - 1)
     {
-        a[i] = a[i + 1];
+        printf("\nInvalid Input");
+    }
+    else
+    {
+        for (i = p - 1; i < n - 1; i++)
+        {
+            a[i] = a[i + 1];
+        }
+        n = n - 1;
     }
 }
 
