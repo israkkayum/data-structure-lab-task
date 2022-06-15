@@ -25,4 +25,4 @@ Lab - 8: Design, develop and implement a menu driven program in C for the follow
 Lab - 9: Design, develop and implement a menu driven program in C for the following Array operations (Don't use build in functions).
 
          a. Read a main string (str), a pattern string (pat) and a replacement string (rep).
-         b. perform pattern matching operation. Find and replace all occurrences of pat in str with rep if pat exists on str. Report with suitable messages             in case pat does not exist in str.
+         b. perform pattern matching operation. Find and replace all occurrences of pat in str with rep if pat exists on str. Report with suitable messages in case pat does not exist in str.
