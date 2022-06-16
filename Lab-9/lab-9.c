@@ -3,13 +3,13 @@
 
 void matchingStr();
 
-char str[100], patstr[100], repstr[100], temstr[100];
-int i = 0, j = 0, k, c = 0, m = 0, find = 0;
+char mainstr[100], patstr[100], repstr[100], temstr[100];
+int a = 0, b = 0, c = 0, d, e = 0, find = 0;
 
 int main()
 {
     printf("Enter the main string = ");
-    gets(str);
+    gets(mainstr);
 
     printf("Enter the pattern string = ");
     gets(patstr);
@@ -33,37 +33,37 @@ int main()
 
 void matchingStr()
 {
-    while (str[c] != '\0')
+    while (mainstr[c] != '\0')
     {
-        if (str[m] == patstr[i])
+        if (mainstr[e] == patstr[a])
         {
-            i++;
-            m++;
+            a++;
+            e++;
 
-            if (patstr[i] == '\0')
+            if (patstr[a] == '\0')
             {
                 find = 1;
 
-                for (k = 0; repstr[k] != '\0'; k++, j++)
+                for (d = 0; repstr[d] != '\0'; d++, b++)
                 {
-                    temstr[j] = repstr[k];
+                    temstr[b] = repstr[d];
                 }
 
-                i = 0;
-                c = m;
+                a = 0;
+                c = e;
             }
         }
 
         else
         {
-            temstr[j] = str[c];
+            temstr[b] = mainstr[c];
 
-            j++;
+            b++;
             c++;
-            m = c;
-            i = 0;
+            e = c;
+            a = 0;
         }
     }
 
-    temstr[j] = '\0';
+    temstr[b] = '\0';
 }
