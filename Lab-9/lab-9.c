@@ -1,12 +1,13 @@
 #include <stdio.h>
 #include <string.h>
 
+void matchingStr();
+
+char str[100], patstr[100], repstr[100], temstr[100];
+int i = 0, j = 0, k, c = 0, m = 0, find = 0;
+
 int main()
 {
-    char str[100], patstr[100], repstr[100];
-    char temstr1[100][100], temstr2[100][100];
-    int k = 0, c = 0, m = 0, n = 0, i, l;
-
     printf("Enter the main string = ");
     gets(str);
 
@@ -16,54 +17,53 @@ int main()
     printf("Enter the replace string = ");
     gets(repstr);
 
-    for (i = 0; i <= strlen(str); i++)
+    matchingStr();
+
+    if (find == 1)
     {
-        if (str[i] == ' ' || str[i] == '\0')
-        {
-            temstr1[c][k] = '\0';
-            c++;
-            k = 0;
-        }
-        else
-        {
-            temstr1[c][k] = str[i];
-            k++;
-        }
+        printf("Modify Result = %s\n", temstr);
     }
-
-    for (i = 0; i <= strlen(patstr); i++)
+    else
     {
-        if (patstr[i] == ' ' || patstr[i] == '\0')
-        {
-            temstr2[m][n] = '\0';
-            m++;
-            n = 0;
-        }
-        else
-        {
-            temstr2[m][n] = patstr[i];
-            n++;
-        }
-    }
-
-    for (i = 0; i < c; i++)
-    {
-        for (l = 0; l < m; l++)
-        {
-            if (temstr1[i] == temstr2[l])
-            {
-                temstr1[i] = repstr[l];
-
-                printf("The Result = %s", temstr1);
-                break;
-            }
-            else
-            {
-                printf("Not found");
-                break;
-            }
-        }
+        printf("Sorry, pattern doesn't match!!");
     }
 
     return 0;
+}
+
+void matchingStr()
+{
+    while (str[c] != '\0')
+    {
+        if (str[m] == patstr[i])
+        {
+            i++;
+            m++;
+
+            if (patstr[i] == '\0')
+            {
+                find = 1;
+
+                for (k = 0; repstr[k] != '\0'; k++, j++)
+                {
+                    temstr[j] = repstr[k];
+                }
+
+                i = 0;
+                c = m;
+            }
+        }
+
+        else
+        {
+            temstr[j] = str[c];
+
+            j++;
+            c++;
+            m = c;
+            i = 0;
+        }
+    }
+
+    temstr[j] = '\0';
 }
