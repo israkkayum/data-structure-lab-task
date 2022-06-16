@@ -1,6 +1,7 @@
 #include <stdio.h>
 #include <string.h>
 #include <stdlib.h>
+#include <ctype.h>
 
 int n;
 int a[100];
@@ -72,7 +73,7 @@ int main()
     {
         printf("\nChoice a Suitable Option : \n A. Create \n B. Display \n C. Insert \n D. Delete \n E. Exit \n");
 
-        scanf("%c", &s);
+        s = toupper(getchar());
 
         switch (s)
         {
@@ -92,5 +93,6 @@ int main()
             exit(0);
             break;
         }
+        getchar();
     }
 }
