@@ -2,10 +2,10 @@
 #include <list>
 using namespace std;
 
-void display(list<int> &lst)
+void display(list<int> &value)
 {
     list<int>::iterator i;
-    for (i = lst.begin(); i != lst.end(); i++)
+    for (i = value.begin(); i != value.end(); i++)
     {
         cout << *i << "  ";
     }
@@ -13,17 +13,17 @@ void display(list<int> &lst)
 
 int main()
 {
-    list<int> mark;
-    mark.push_back(10);
-    mark.push_back(20);
-    mark.push_back(30);
-    mark.push_back(56);
-    mark.push_back(60);
-    mark.push_back(90);
+    list<int> value;
+    value.push_back(10);
+    value.push_back(20);
+    value.push_back(30);
+    value.push_back(56);
+    value.push_back(60);
+    value.push_back(90);
 
-    mark.remove(30);
-    mark.pop_front();
-    mark.pop_back();
+    value.remove(30);
+    value.pop_front();
+    value.pop_back();
 
-    display(mark);
+    display(value);
 }
