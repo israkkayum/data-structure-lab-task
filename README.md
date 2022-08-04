@@ -36,3 +36,33 @@ Lab - 10: Design, develop and implement a menu driven program in c for the
          c. Demonstrate Overflow and Underflow situations on Circular Queue.
          d. Display the status of Circular Queue.
          e. Exit.
+         
+Lab - 11: Implement a Linked List. Insert an item and delete an item from Linked List.
+
+Lab - 12: Design, develop and implement a menu driven program in c for the
+         following operations on Singly Linked List (SLL) of Students Data with the fields:
+         RegID, Name, StudyCenter, Sem, PhNo.
+         
+         a. Create a SLL of N Students Data by using front insertion.
+         b. Display the status of SLL and count the number of nodes in it.
+         c. Perform Insertion and Deletion at End of SLL.
+         d. Perform Insertion and Deletion at Frond of SLL.
+         e. Demonstrate how this SLL can be used as STACK and QUEUE.
+         f. Exit.
+
+Lab - 13: Design, develop and implement a menu driven program in c for the
+         following operations on STACK of integers (Array implementation of stack with
+         maximum size MAX)
+         
+         a. Create a stack.
+         b. Push an element onto the stack.
+         c. Pop an element from the stack.
+         d. Display the status of the stack.
+         e. Exit.
+         
+         Support the program with appropriate functions for each of the above operations
+         
+Lab - 14: Design, develop and implement a program in C for converting an infix
+         expression to postfix expression. Program should support for both parenthesized and
+         free parenthesized expressions with the operators: + , - , * , / , % (Reminder), ^
+         (Power) and alphanumeric operands.
