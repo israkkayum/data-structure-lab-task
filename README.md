@@ -66,3 +66,23 @@ Lab - 14: Design, develop and implement a program in C for converting an infix
          expression to postfix expression. Program should support for both parenthesized and
          free parenthesized expressions with the operators: + , - , * , / , % (Reminder), ^
          (Power) and alphanumeric operands.
+         
+Lab - 15: Design, develop and implement a menu driven program in c for the
+         following operations on Binary Search Tree (BST) of Integers
+         
+         a. Create a BST of N Integers: 6, 9, 5, 2, 8, 15, 24, 14, 7, 8, 5, 2
+         b. Traverse the BST in Inorder, Preorder and Post Order
+         c. Search the BST for a given element (KEY) and report the appropriate message
+         d. Delete an element (ELEM) from BST
+         e. Exit
+
+Lab - 16: Design, develop and implement a menu driven program in c for the
+         following operations on Doubly Linked List (DLL) of Employee Data with the fields:
+         SSN, Name, Dept, Designation, Salary, PhNo
+         
+         a. Create a DLL of N Employees data by using end insertion.
+         b. Display the status of DLL and count the number of nodes in it
+         c. Perform Insertion and Deletion at End of DLL
+         d. Perform Insertion and Deletion at Front of DLL
+         e. Demonstrate how this DLL can be used as Double Ended Queue
+         f. Exit
