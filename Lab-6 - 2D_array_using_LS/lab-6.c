@@ -25,7 +25,7 @@ int main()
         {
             if (arr[i][j] == find)
             {
-                printf("Row = %d, Col = %d\n", i, j);
+                printf("\nRow = %d, Col = %d\n\n", i, j);
                 return 0;
             }
         }

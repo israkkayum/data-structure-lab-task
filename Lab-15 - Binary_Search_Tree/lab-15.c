@@ -42,7 +42,7 @@ NODE *search(NODE *node, int data)
 
     if (node == NULL)
 
-        printf("\nElement not found");
+        printf("\nElement not found\n");
 
     else if (data < node->data)
     {
@@ -55,7 +55,7 @@ NODE *search(NODE *node, int data)
     }
 
     else
-        printf("\nElement found is: %d", node->data);
+        printf("\nElement found is: %d\n", node->data);
 
     return node;
 }
@@ -115,7 +115,7 @@ NODE *del(NODE *node, int data)
 
     if (node == NULL)
     {
-        printf("\nElement not found");
+        printf("\nElement not found\n");
     }
 
     else if (data < node->data)
@@ -160,13 +160,13 @@ int main()
     int data, ch, i, n;
     NODE *root = NULL;
 
+    printf("\n1.Insertion in Binary Search Tree");
+    printf("\n2.Search Element in Binary Search Tree");
+    printf("\n3.Delete Element in Binary Search Tree");
+    printf("\n4.Inorder\n5.Preorder\n6.Postorder\n7.Exit\n");
+
     while (1)
     {
-
-        printf("\n1.Insertion in Binary Search Tree");
-        printf("\n2.Search Element in Binary Search Tree");
-        printf("\n3.Delete Element in Binary Search Tree");
-        printf("\n4.Inorder\n5.Preorder\n6.Postorder\n7.Exit");
         printf("\nEnter your choice: ");
         scanf("%d", &ch);
 
@@ -205,31 +205,30 @@ int main()
             break;
 
         case 4:
-            printf("\nInorder Traversal: \n");
-
+            printf("\nInorder Traversal: ");
             inorder(root);
-
+            printf("\n");
             break;
 
         case 5:
-            printf("\nPreorder Traversal: \n");
-
+            printf("\nPreorder Traversal: ");
             preorder(root);
-
+            printf("\n");
             break;
 
         case 6:
-            printf("\nPostorder Traversal: \n");
-
+            printf("\nPostorder Traversal: ");
             postorder(root);
+            printf("\n");
 
             break;
 
         case 7:
+            printf("\n");
             exit(0);
 
         default:
-            printf("\nWrong option");
+            printf("\nWrong option\n");
 
             break;
         }

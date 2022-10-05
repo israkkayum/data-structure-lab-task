@@ -180,7 +180,7 @@ void employerDetails()
     int ch, n, i;
     h = NULL;
     temp = temp1 = NULL;
-    printf("-----------Menu------------\n");
+    printf("\n-----------Menu------------\n");
     printf("\n 1.Create a DLL of n employee");
     printf("\n 2.Display from front");
     printf("\n 3.Insert at end");

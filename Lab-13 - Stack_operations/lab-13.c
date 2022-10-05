@@ -17,8 +17,8 @@ int main()
 
     while (1)
     {
-        printf("\nChoice your suitable option : \n");
-        printf("1. Push \n2. Pop \n3. Dispaly \n4. Exit\n");
+        printf("\n1. Push 2. Pop 3. Dispaly 4. Exit\n");
+        printf("\nChoice your suitable option : ");
         scanf("%d", &n);
 
         switch (n)
@@ -33,6 +33,7 @@ int main()
             display();
             break;
         case 4:
+            printf("\n");
             exit(0);
             break;
 
@@ -50,12 +51,12 @@ void push()
 {
     int x;
 
-    printf("Enter data : ");
+    printf("\nEnter data : ");
     scanf("%d", &x);
 
     if (top == MAX - 1)
     {
-        printf("Stack Overflow\n");
+        printf("\nStack Overflow\n");
     }
     else
     {
@@ -71,7 +72,7 @@ void pop()
     int item;
     if (top == -1)
     {
-        printf("Stack Underflow\n");
+        printf("\nStack Underflow\n");
     }
     else
     {
@@ -85,10 +86,11 @@ void display()
 {
     int i;
 
-    printf("Stack data are : ");
+    printf("\nStack data are : ");
 
     for (i = top; i >= 0; i--)
     {
         printf("%d ", stack[i]);
     }
+    printf("\n");
 }

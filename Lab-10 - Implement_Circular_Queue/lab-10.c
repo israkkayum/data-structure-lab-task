@@ -18,8 +18,8 @@ int main()
 
     while (1)
     {
-        printf("\nChoice your suitable option : \n");
-        printf("1. enQueue \n2. deQueue \n3. Dispaly \n4. Exit\n");
+        printf("\n1. enQueue 2. deQueue 3. Dispaly 4. Exit\n");
+        printf("\nChoice your suitable option : ");
         scanf("%d", &n);
 
         switch (n)
@@ -34,6 +34,7 @@ int main()
             displayQueue();
             break;
         case 4:
+            printf("\n");
             exit(0);
             break;
 
@@ -51,7 +52,7 @@ void enQueue()
 {
     int x;
 
-    printf("Enter any data = ");
+    printf("\nEnter any data = ");
     scanf("%d", &x);
 
     if (front == -1 && rear == -1)
@@ -61,7 +62,7 @@ void enQueue()
     }
     else if (((rear + 1) % MAX) == front)
     {
-        printf("Queue is Overflow\n");
+        printf("\nQueue is Overflow\n");
     }
     else
     {
@@ -76,7 +77,7 @@ void deQueue()
 {
     if (front == -1 && rear == -1)
     {
-        printf("Queue is Underflow\n");
+        printf("\nQueue is Underflow\n");
     }
     else if (front == rear)
     {
@@ -96,17 +97,17 @@ void displayQueue()
 
     if (front == -1 && rear == -1)
     {
-        printf("Queue is Underflow\n");
+        printf("\nQueue is Underflow\n");
     }
     else
     {
-        printf("Queue are : ");
+        printf("\nQueue are : ");
 
         while (i != rear)
         {
             printf("%d ", queue[i]);
             i = (i + 1) % MAX;
         }
-        printf("%d", queue[rear]);
+        printf("%d\n", queue[rear]);
     }
 }

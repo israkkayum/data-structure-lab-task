@@ -8,24 +8,24 @@ int a = 0, b = 0, c = 0, d, e = 0, find = 0;
 
 int main()
 {
-    printf("Enter the main string = ");
-    gets(mainstr);
+    printf("\nEnter the main string = ");
+    fgets(mainstr, 100, stdin);
 
-    printf("Enter the pattern string = ");
-    gets(patstr);
+    printf("\nEnter the pattern string = ");
+    fgets(patstr, 100, stdin);
 
-    printf("Enter the replace string = ");
-    gets(repstr);
+    printf("\nEnter the replace string = ");
+    fgets(repstr, 100, stdin);
 
     matchingStr();
 
     if (find == 1)
     {
-        printf("Modify Result = %s\n", temstr);
+        printf("\nModify Result = %s\n", temstr);
     }
     else
     {
-        printf("Sorry, pattern doesn't match!!");
+        printf("\nSorry, pattern doesn't match!!\n");
     }
 
     return 0;

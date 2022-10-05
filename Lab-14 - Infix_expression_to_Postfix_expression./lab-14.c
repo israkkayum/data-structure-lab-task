@@ -26,7 +26,7 @@ int main()
 
     infix_to_postfix();
 
-    printf("Equivalent Postfix Expression : %s\n\n", postfixStr);
+    printf("\nEquivalent Postfix Expression : %s\n\n", postfixStr);
 
     return 0;
 }

@@ -167,6 +167,7 @@ int main()
             break;
 
         case 6:
+            printf("\n");
             exit(0);
         }
 

@@ -37,14 +37,14 @@ int main()
     third->data = 3;
     third->next = NULL;
 
-    printf("Link list data after inserting : ");
+    printf("\nLink list data after inserting : ");
     printList(head);
 
     temp = head;
     head = head->next;
     free(temp);
 
-    printf("Link list data deleting : ");
+    printf("\nLink list data deleting : ");
     printList(head);
 
     return 0;

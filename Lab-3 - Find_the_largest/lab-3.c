@@ -7,10 +7,10 @@ int main()
     int max_value = arr[0];
     int max_index;
 
-    printf("Enter the Array Size: ");
+    printf("\nEnter the Array Size: ");
     scanf("%d", &n);
 
-    printf("Enter Array Element: ");
+    printf("\nEnter Array Element: ");
     for (int i = 0; i < n; i++)
     {
         scanf("%d", &arr[i]);
@@ -25,5 +25,5 @@ int main()
         }
     }
 
-    printf("%d is the largest value which index is %d\n", max_value, max_index);
+    printf("\n%d is the largest value which index is %d\n\n", max_value, max_index);
 }

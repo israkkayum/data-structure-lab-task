@@ -23,11 +23,12 @@ void display()
 {
     int i;
 
-    printf("The Array Element are: ");
+    printf("\nThe Array Element are: ");
     for (i = 0; i < n; i++)
     {
         printf("%d ", a[i]);
     }
+    printf("\n");
 }
 
 void insert()
@@ -71,7 +72,7 @@ int main()
 
     while (1)
     {
-        printf("\nChoice a Suitable Option : \n A. Create \n B. Display \n C. Insert \n D. Delete \n E. Exit \n");
+        printf("\nA. Create B. Display C. Insert D. Delete E. Exit \n\nChoice a Suitable Option : ");
 
         s = toupper(getchar());
 

@@ -15,8 +15,8 @@ int main()
 
     while (1)
     {
-        printf("\nChoice your suitable option: \n");
-        printf("A. Enqueue \nB. Dequeue \nC. Display \nD. Exit\n");
+        printf("\nA. Enqueue B. Dequeue C. Display D. Exit\n");
+        printf("\nChoice your suitable option: ");
 
         s = toupper(getchar());
 
@@ -39,7 +39,7 @@ int main()
             break;
 
         default:
-            printf("Invalid Input!!");
+            printf("\nInvalid Input!!\n");
             break;
         }
         getchar();
@@ -50,7 +50,7 @@ void enQueue()
 {
     if (rear == SIZE - 1)
     {
-        printf("\nSorry!! Queue is Full.");
+        printf("\nSorry!! Queue is Full.\n");
     }
     else
     {
@@ -71,11 +71,11 @@ void deQueue()
 {
     if (front == -1)
     {
-        printf("\nSorry!! Queue is Empty.");
+        printf("\nSorry!! Queue is Empty.\n");
     }
     else
     {
-        printf("\nDeleted Item : %d", items[front]);
+        printf("\nDeleted Item : %d\n", items[front]);
         front++;
 
         if (front > rear)
@@ -89,7 +89,7 @@ void display()
 {
     if (rear == -1)
     {
-        printf("\nQueue is Empty!!");
+        printf("\nQueue is Empty!!\n");
     }
     else
     {
@@ -99,5 +99,7 @@ void display()
         {
             printf("%d ", items[i]);
         }
+
+        printf("\n");
     }
 }
