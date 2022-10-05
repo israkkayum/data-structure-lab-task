@@ -86,3 +86,9 @@ Lab - 16: Design, develop and implement a menu driven program in c for the
          d. Perform Insertion and Deletion at Front of DLL
          e. Demonstrate how this DLL can be used as Double Ended Queue
          f. Exit
+         
+Lab - 17: Write a C program to perform the following operations.
+
+          a. Insertion into an AVL-tree
+          b. Deletion from an AVL-tree
+          c. Search for a key element in an AVL tree.
